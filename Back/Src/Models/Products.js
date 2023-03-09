@@ -18,7 +18,7 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
       isbn: {
-        type: DataTypes.BOOLEAN,
+        type: DataTypes.NUMBER,
         unique: true,   
         allowNull: false,
       },
@@ -39,7 +39,7 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
       stock: {
-        type: DataTypes.BOOLEAN,
+        type: DataTypes.INTEGER,
         allowNull: false,
       },
       codigo: {
@@ -48,10 +48,5 @@ module.exports = (sequelize) => {
         unique: true,
       },
     },
-    {
-      paranoid: true,
-      deletedAt: 'destroyTime',
-      timestamps: true,
-    }
   );
 };
