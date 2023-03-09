@@ -18,7 +18,7 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
       isbn: {
-        type: DataTypes.NUMBER,
+        type: DataTypes.REAL,
         unique: true,   
         allowNull: false,
       },
@@ -43,7 +43,7 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
       codigo: {
-        type: DataTypes.BOOLEAN,
+        type: DataTypes.INTEGER,
         allowNull: true,
         unique: true,
       },
