@@ -14,7 +14,7 @@ const { Entry } = require('../db');
             res.status(400).send(error);
         }
         });
- 
+//
  
 // || POST /ENTRY || //
                     // PARA CREAR NUEVOS INGRESOS
