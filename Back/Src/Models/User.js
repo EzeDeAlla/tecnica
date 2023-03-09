@@ -7,11 +7,11 @@ module.exports = (sequelize) => {
     'User',
     {
       id: {
-        type: DataTypes.UUID,
-        defaultValue: DataTypes.UUIDV4,
-        allowNull: false,
-        unique: true,
-        primaryKey: true,
+          type: DataTypes.INTEGER,
+          allowNull: false,
+          unique: true,
+          primaryKey: true,
+          autoIncrement: true,
       },
       name: {
         type: DataTypes.STRING,
@@ -22,7 +22,7 @@ module.exports = (sequelize) => {
         allowNull: true,
       },
       mail: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false,
       },
       imgperfil: {
