@@ -15,7 +15,7 @@ const { Entry } = require('../db');
         }
         });
 
-
+ 
 // || POST /ENTRY || //
                     // PARA CREAR NUEVOS INGRESOS
 router.post('', async (req, res) => {
